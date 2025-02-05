@@ -42,7 +42,7 @@ btn.addEventListener("click",()=>{
     continuebtn.style.display="flex"
 })
 OTPinp.addEventListener("click",()=>{
-    OTPinp.style.border="2px solid greenyellow";
+    OTPinp.style.border="2px solid black";
     cross.style.display="none"
     OTPbtn.style.left="10px";
 }
