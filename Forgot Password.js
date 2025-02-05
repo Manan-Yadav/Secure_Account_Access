@@ -10,17 +10,17 @@ function sendOTP() {
     let OTP_val = Math.floor(1000 + Math.random() * 9000);
     let emailbody = `<h2>Your OTP is </h2>${OTP_val}`;
 
-    console.log("Sending OTP to:", email.value); // Debugging
+    console.log("Sending OTP to:", email.value); 
 
     Email.send({
-        SecureToken: "e94c2c73-2fba-4949-9820-a81253313ed3", // Replace with new token if needed
+        SecureToken: "e94c2c73-2fba-4949-9820-a81253313ed3", 
         To: email.value,
         From: "shyam73245@gmail.com",
         Subject: "OTP for Password reset",
         Body: emailbody,
     }).then(
         message => {
-            console.log("Email Response:", message); // Debugging
+            console.log("Email Response:", message); 
             if (message === "OK") {
                 alert("OTP sent to " + email.value);
                 otp.style.display = "flex";
