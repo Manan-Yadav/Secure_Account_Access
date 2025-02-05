@@ -3,7 +3,7 @@ body{
     padding: 0px;
     box-sizing: border-box;
     /* background: linear-gradient(to top,rgb(27, 27, 27),rgb(151, 238, 151)); */
-    background-image: url("black-and-green-1920-x-1200-background-psa2cnwsi98qti86.jpg");
+    background-image: url("1679223598_en-idei-club-p-office-background-image-dizain-krasivo-14.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -23,9 +23,11 @@ body{
     border: 2px solid rgb(144, 238, 144);
     padding:65px 7px;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 14px rgba(7, 238, 65, 0.6);
+    background: rgba(241, 222, 222, 0.1);
+    backdrop-filter: blur(12px);
+    border:3px solid black;
+    box-shadow: 0 0 8px rgb(243, 232, 232);
+
 }
 .button{
     text-align: center;
@@ -51,6 +53,7 @@ body{
     position: relative;
     right: 16px;
     font-size:11px;
+    bottom:1px;
     color: rgb(73, 69, 69);
 }
 .username input::placeholder{
@@ -63,10 +66,12 @@ button{
     height:30px;
     width: 292px;
     border-radius: 12px;
-    border: 2px solid greenyellow;
-    background-color: lightgreen;
+    border: 2px solid black;
+    background-color:rgb(82, 48, 25);
     font-size: 18px;
     font-weight: 500;
+    color: white;
+    padding: 2px;
 }
 .username  input{
     padding: 0px 12px;
@@ -74,7 +79,7 @@ button{
     width: 265px;
     transform: translateX(7px);
     border-radius: 12px;
-    border: 2px solid greenyellow;
+    border: 2px solid black;
 }
 .password input{
     padding: 0px 12px;
@@ -82,20 +87,21 @@ button{
     width: 265px;
     transform: translateX(7px);
     border-radius: 12px;
-    border: 2px solid greenyellow;
+    border: 2px solid black;
 }
 .last a{
-    color: lightgreen;
+    color:white;
     font-size: large;
+    font-weight: 500;
 }
 button:hover{
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 5px 5px 5px black;
 }
 .username input:hover{
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 5px 5px 5px black;
 }
 .password input:hover{
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 5px 5px 5px black;
 }
 button:active{
     background-color: red;
@@ -106,8 +112,8 @@ button:active{
     position: relative;
     top:11px;
     color: rgb(255, 253, 253);
-    font-weight: 200;
-    font-size:medium;
+    font-weight: 500;
+    font-size:16px;
 }
 .fa-circle-xmark{
     color: red;
