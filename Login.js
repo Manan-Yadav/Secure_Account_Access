@@ -37,7 +37,7 @@ login.addEventListener("click",()=>{
 })
 pwd.addEventListener("click",()=>{
     wrong.style.display="none"
-    pwd.style.border="2px solid greenyellow";
+    pwd.style.border="2px solid black";
     slashed_eye.classList.remove("fa-circle-xmark")
     slashed_eye.classList.add("fa-eye-slash")
 })
