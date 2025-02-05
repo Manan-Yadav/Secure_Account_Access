@@ -70,13 +70,13 @@ else{
     alert("Password changed successfully ");
     let newpwdvalue=newpwd.value
     localStorage.setItem('oldpwd',newpwdvalue);
-    donelink.setAttribute("href",".Login.html")
+    donelink.setAttribute("href","./index.html")
 }
 })
 newpwd.addEventListener("click",()=>{
         match.style.display="none"
-        newpwd.style.border="2px solid greenyellow"
-        checkpwd.style.border="2px solid greenyellow"
+        newpwd.style.border="2px solid black"
+        checkpwd.style.border="2px solid black"
         slashed_eye.classList.remove("fa-circle-xmark")
         slashed_eye.classList.add("fa-eye-slash")
         slash_eye.classList.remove("fa-circle-xmark")
@@ -84,8 +84,8 @@ newpwd.addEventListener("click",()=>{
 })
 checkpwd.addEventListener("click",()=>{
         match.style.display="none"
-        newpwd.style.border="2px solid greenyellow"
-        checkpwd.style.border="2px solid greenyellow"
+        newpwd.style.border="2px solid black"
+        checkpwd.style.border="2px solid black"
         slashed_eye.classList.remove("fa-circle-xmark")
         slashed_eye.classList.add("fa-eye-slash")
         slash_eye.classList.remove("fa-circle-xmark")
