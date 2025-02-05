@@ -1,0 +1,118 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background: linear-gradient(to top,rgb(27, 27, 27),rgb(151, 238, 151)); */
+    background-image: url("black-and-green-1920-x-1200-background-psa2cnwsi98qti86.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: "Ubuntu", sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 179px 0px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    border: 2px solid rgb(144, 238, 144);
+    padding:65px 7px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 14px rgba(7, 238, 65, 0.6);
+}
+.button{
+    text-align: center;
+    transform: translateY(16px);
+}
+.last{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+    /* color: white; */
+}
+.last a{
+    text-decoration: none;
+}
+.box h1{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom:-12px;
+    transform: translateY(-25px);
+    color: white;
+}
+.fa-regular{
+    position: relative;
+    right: 16px;
+    font-size:11px;
+    color: rgb(73, 69, 69);
+}
+.username input::placeholder{
+    padding: 0px 5px;
+}
+.password input::placeholder{
+    padding: 0px 5px;
+}
+button{
+    height:30px;
+    width: 292px;
+    border-radius: 12px;
+    border: 2px solid greenyellow;
+    background-color: lightgreen;
+    font-size: 18px;
+    font-weight: 500;
+}
+.username  input{
+    padding: 0px 12px;
+    height:25px;
+    width: 265px;
+    transform: translateX(7px);
+    border-radius: 12px;
+    border: 2px solid greenyellow;
+}
+.password input{
+    padding: 0px 12px;
+    height:25px;
+    width: 265px;
+    transform: translateX(7px);
+    border-radius: 12px;
+    border: 2px solid greenyellow;
+}
+.last a{
+    color: lightgreen;
+    font-size: large;
+}
+button:hover{
+    box-shadow: 2px 2px 2px black;
+}
+.username input:hover{
+    box-shadow: 2px 2px 2px black;
+}
+.password input:hover{
+    box-shadow: 2px 2px 2px black;
+}
+button:active{
+    background-color: red;
+}
+.wrong{
+    margin: 0px auto;
+    display: none;
+    position: relative;
+    top:11px;
+    color: rgb(255, 253, 253);
+    font-weight: 200;
+    font-size:medium;
+}
+.fa-circle-xmark{
+    color: red;
+    font-size: 16px;
+    position: relative;
+    top:1px;
+
+}
