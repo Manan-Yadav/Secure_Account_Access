@@ -1,16 +1,12 @@
 function sendOTP(){
     const email=document.querySelector("#email");
     const otp=document.querySelector(".otp");
-
+    const serviceId="service_i0i5rlm";
+    const templateId="template_4yg0zaw";
     let OTP_val=Math.floor(Math.random()*10000);
     let emailbody=`<h2>Your OTP is </h2>${OTP_val}`;
-    Email.send({
-        SecureToken : "e94c2c73-2fba-4949-9820-a81253313ed3",
-        To : email.value,
-        From : "shyam73245@gmail.com",
-        Subject : "OTP for Password reset ",
-        Body : emailbody,
-    }).then(
+    emailjs.send(serviceId,templateId,params)
+      .then(
       message => {
         if(message=="OK"){
             alert("OTP sent to your email " + email.value);
